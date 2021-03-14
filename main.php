@@ -57,6 +57,7 @@ class Team
     }
         
 }
+
 class Member
 {
     protected $name;
@@ -71,6 +72,7 @@ class Member
 
     }
 }
+
 $acme = Team::start('Acme', [
     new Member('Jordan'),
     new Member('Jane'),
