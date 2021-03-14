@@ -79,7 +79,7 @@ $acme = Team::start('Acme', [
 ]);
 $warner = Team::start('warner');
 print_r($warner);
-$warner->add();
+$warner->add('jona');
 $acme->add('jordan');
 var_dump($acme->members());
 
