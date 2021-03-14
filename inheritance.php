@@ -10,8 +10,8 @@ class Collection
 
     public function sum($key)
     {
-        // new arr of values in collection
-        return array_sum(array_map(fn($item) => $item->$key, $this->items));
+        //  $key passed in through line 23, as "length" which is the key for the numeric value we're summing
+        return array_sum(array_column($this->items, $key));
 
     }
 }
@@ -20,6 +20,7 @@ class VideosCollection extends Collection
 {
     public function length()
     {
+        //  passing length as key line 11
         return $this->sum('length');
     }
 }
