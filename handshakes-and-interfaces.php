@@ -17,7 +17,7 @@ class CampaignMonitor implements Newsletter
     }
 }
 
-class Drip
+class Drip implements Newsletter
 {
     public function subscribe($email)
     {
